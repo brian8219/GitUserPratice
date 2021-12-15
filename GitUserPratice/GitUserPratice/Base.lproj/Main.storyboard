@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RAR-dz-2eg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--User List View Controller-->
+        <!--User-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="UserListViewController" customModule="GitUserPratice" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,16 +93,53 @@
                             <constraint firstItem="pB6-fH-AuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ybH-CH-bao"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="User" image="person.fill" catalog="system" id="6a2-Li-odK"/>
                     <connections>
                         <outlet property="tableView" destination="pB6-fH-AuX" id="esz-q9-2il"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
+        </scene>
+        <!--Mine-->
+        <scene sceneID="GLS-ZL-ZQW">
+            <objects>
+                <viewController id="Zui-Vt-a67" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Afm-Pi-Ywi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nKR-lK-IVS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mine" image="info.circle" catalog="system" id="yCJ-We-cat"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enG-vg-8My" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="821"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="YSN-M6-d0t">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RAR-dz-2eg" customClass="TabBarViewController" customModule="GitUserPratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zmK-xh-H1o">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="IsU-gn-nwr"/>
+                        <segue destination="Zui-Vt-a67" kind="relationship" relationship="viewControllers" id="0bp-6v-917"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yq3-Tt-1jL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="467"/>
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
