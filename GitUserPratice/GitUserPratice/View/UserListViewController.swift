@@ -13,7 +13,7 @@ class UserListViewController: UIViewController {
     let userListViewModel = UserListViewModel()
     
     override func viewDidLoad() {
-        initView()
+        super.viewDidLoad()
         bindViewModel()
         userListViewModel.getUserList(lastIndex: 0)
     }
@@ -23,14 +23,11 @@ class UserListViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func initView() {
-        var safeAreaHeight : CGFloat = 0
-        super.viewDidLoad()
-        if #available(iOS 13.0, *) {
-            let window = UIApplication.shared.windows.first
-            safeAreaHeight = window?.safeAreaInsets.top ?? 0
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let login = sender as? String, let controller = segue.destination as? UserDetailViewController else {
+            return
         }
-        tableView.backgroundColor = UIColor.white
+        controller.login = login
     }
     
     func bindViewModel() {
@@ -62,6 +59,10 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "UserDetailView", sender: userListViewModel.userInfoCellViewModels[indexPath.row].login)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
   
 }
 

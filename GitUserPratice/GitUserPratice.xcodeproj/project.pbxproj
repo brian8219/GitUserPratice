@@ -14,6 +14,7 @@
 		D3737BFA2769DD560071222A /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737BF92769DD560071222A /* UserDetailModel.swift */; };
 		D3737C05276A033D0071222A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C04276A033D0071222A /* UserListViewModel.swift */; };
 		D3737C0B276A04E40071222A /* MineInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C0A276A04E40071222A /* MineInfoViewController.swift */; };
+		D3737C0D276A30640071222A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C0C276A30640071222A /* UserDetailViewController.swift */; };
 		D391A2352769BDFD00F934E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391A2342769BDFD00F934E5 /* AppDelegate.swift */; };
 		D391A2372769BDFD00F934E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391A2362769BDFD00F934E5 /* SceneDelegate.swift */; };
 		D391A2392769BDFD00F934E5 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391A2382769BDFD00F934E5 /* UserListViewController.swift */; };
@@ -31,6 +32,7 @@
 		D3737BF92769DD560071222A /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
 		D3737C04276A033D0071222A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		D3737C0A276A04E40071222A /* MineInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineInfoViewController.swift; sourceTree = "<group>"; };
+		D3737C0C276A30640071222A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		D391A2312769BDFD00F934E5 /* GitUserPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitUserPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D391A2342769BDFD00F934E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D391A2362769BDFD00F934E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D391A2382769BDFD00F934E5 /* UserListViewController.swift */,
 				D3737BF32769C64D0071222A /* UserInfoCell.swift */,
 				D3737BF52769D2790071222A /* TabBarViewController.swift */,
+				D3737C0C276A30640071222A /* UserDetailViewController.swift */,
 				D3737C0A276A04E40071222A /* MineInfoViewController.swift */,
 			);
 			path = View;
@@ -187,6 +190,7 @@
 			files = (
 				D3737C0B276A04E40071222A /* MineInfoViewController.swift in Sources */,
 				D3737BF82769DCA20071222A /* UserDetailViewModel.swift in Sources */,
+				D3737C0D276A30640071222A /* UserDetailViewController.swift in Sources */,
 				D3737C05276A033D0071222A /* UserListViewModel.swift in Sources */,
 				D3737BF62769D2790071222A /* TabBarViewController.swift in Sources */,
 				D391A2392769BDFD00F934E5 /* UserListViewController.swift in Sources */,
