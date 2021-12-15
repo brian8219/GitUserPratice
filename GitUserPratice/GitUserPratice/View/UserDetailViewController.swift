@@ -34,6 +34,7 @@ class UserDetailViewController : UIViewController {
         userDetailViewModel.onImageDownloaded = {[weak self] image in
             DispatchQueue.main.async {
                 self?.avatarImage.image = image
+                self?.avatarImage.makeRounded()
             }
 
         }

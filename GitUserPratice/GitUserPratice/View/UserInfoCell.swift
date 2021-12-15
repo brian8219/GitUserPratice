@@ -10,7 +10,6 @@ import UIKit
 
 class UserInfoCell: UITableViewCell {
     @IBOutlet weak var accountTypeLabel: UILabel!
-    @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var avatarImage: UIImageView!
     
@@ -30,10 +29,10 @@ class UserInfoCell: UITableViewCell {
         self.userInfoCellViewModel = viewModel
         self.loginLabel.text = viewModel.login
         self.accountTypeLabel.text = viewModel.type
-        self.idLabel.text = "\(viewModel.id)"
         self.userInfoCellViewModel?.onImageDownloaded = { [weak self] image in
             DispatchQueue.main.async {
                 self?.avatarImage.image = image
+                self?.avatarImage.makeRounded()
             }
         }
         self.userInfoCellViewModel?.getImage()

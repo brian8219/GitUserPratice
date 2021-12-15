@@ -15,6 +15,7 @@
 		D3737C05276A033D0071222A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C04276A033D0071222A /* UserListViewModel.swift */; };
 		D3737C0B276A04E40071222A /* MineInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C0A276A04E40071222A /* MineInfoViewController.swift */; };
 		D3737C0D276A30640071222A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C0C276A30640071222A /* UserDetailViewController.swift */; };
+		D3737C10276A44E60071222A /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3737C0F276A44E60071222A /* ImageViewExtension.swift */; };
 		D391A2352769BDFD00F934E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391A2342769BDFD00F934E5 /* AppDelegate.swift */; };
 		D391A2372769BDFD00F934E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391A2362769BDFD00F934E5 /* SceneDelegate.swift */; };
 		D391A2392769BDFD00F934E5 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391A2382769BDFD00F934E5 /* UserListViewController.swift */; };
@@ -33,6 +34,7 @@
 		D3737C04276A033D0071222A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		D3737C0A276A04E40071222A /* MineInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineInfoViewController.swift; sourceTree = "<group>"; };
 		D3737C0C276A30640071222A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		D3737C0F276A44E60071222A /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		D391A2312769BDFD00F934E5 /* GitUserPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitUserPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D391A2342769BDFD00F934E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D391A2362769BDFD00F934E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		D3737C0E276A44C20071222A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3737C0F276A44E60071222A /* ImageViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D391A2282769BDFD00F934E5 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 			children = (
 				D391A2342769BDFD00F934E5 /* AppDelegate.swift */,
 				D391A2362769BDFD00F934E5 /* SceneDelegate.swift */,
+				D3737C0E276A44C20071222A /* Extension */,
 				D391A23A2769BDFD00F934E5 /* Main.storyboard */,
 				D3737C03276A03280071222A /* ViewModel */,
 				D3737BFC276A01F60071222A /* Model */,
@@ -194,6 +205,7 @@
 				D3737C05276A033D0071222A /* UserListViewModel.swift in Sources */,
 				D3737BF62769D2790071222A /* TabBarViewController.swift in Sources */,
 				D391A2392769BDFD00F934E5 /* UserListViewController.swift in Sources */,
+				D3737C10276A44E60071222A /* ImageViewExtension.swift in Sources */,
 				D391A2352769BDFD00F934E5 /* AppDelegate.swift in Sources */,
 				D391A2492769BF7100F934E5 /* UserInfoModel.swift in Sources */,
 				D3737BF42769C64D0071222A /* UserInfoCell.swift in Sources */,
