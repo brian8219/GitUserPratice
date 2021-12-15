@@ -11,12 +11,11 @@ class UserListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
    
     let userListViewModel = UserListViewModel()
-    let userDetailViewModel = UserDetailViewModel()
+    
     override func viewDidLoad() {
         initView()
         bindViewModel()
         userListViewModel.getUserList(lastIndex: 0)
-        userDetailViewModel.getUserDetail()
     }
  
     
