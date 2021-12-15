@@ -22,6 +22,8 @@ class UserInfoCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        avatarImage.image = nil
+        self.userInfoCellViewModel?.onImageDownloaded = nil
     }
     
     func setup(viewModel: UserInfoCellViewModel) {
@@ -29,6 +31,12 @@ class UserInfoCell: UITableViewCell {
         self.loginLabel.text = viewModel.login
         self.accountTypeLabel.text = viewModel.type
         self.idLabel.text = "\(viewModel.id)"
+        self.userInfoCellViewModel?.onImageDownloaded = { [weak self] image in
+            DispatchQueue.main.async {
+                self?.avatarImage.image = image
+            }
+        }
+        self.userInfoCellViewModel?.getImage()
     }
-
+    
 }
