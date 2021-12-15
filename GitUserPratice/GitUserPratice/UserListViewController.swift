@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserListViewController: UIViewController {
+    
+    let viewModel = UserListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.getApiData(lastIndex: 0)
     }
 
 
