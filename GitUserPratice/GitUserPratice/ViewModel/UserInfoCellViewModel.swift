@@ -30,6 +30,7 @@ class UserInfoCellViewModel {
            do {
                let data = try Data(contentsOf: url)
                let image = UIImage(data: data)
+                self?.pic = image
                guard let imageDownloaded = self?.onImageDownloaded else { return }
                imageDownloaded(image)
            } catch let error {

@@ -29,13 +29,17 @@ class UserInfoCell: UITableViewCell {
         self.userInfoCellViewModel = viewModel
         self.loginLabel.text = viewModel.login
         self.accountTypeLabel.text = viewModel.type
-        self.userInfoCellViewModel?.onImageDownloaded = { [weak self] image in
-            DispatchQueue.main.async {
-                self?.avatarImage.image = image
-                self?.avatarImage.makeRounded()
+        if let image = viewModel.pic {
+            self.avatarImage.image = image
+        } else {
+            self.userInfoCellViewModel?.onImageDownloaded = { [weak self] image in
+                DispatchQueue.main.async {
+                    self?.avatarImage.image = image
+                    self?.avatarImage.makeRounded()
+                }
             }
+            self.userInfoCellViewModel?.getImage()
         }
-        self.userInfoCellViewModel?.getImage()
     }
     
 }
